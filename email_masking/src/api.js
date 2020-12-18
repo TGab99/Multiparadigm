@@ -1,4 +1,4 @@
-const maskEmail = (email = '') => {
+const maskEmail = (email) => {
     const name = email.substring(0, email.lastIndexOf("@"));
     const domain = email.substring(email.lastIndexOf("@"));
     const { length: len } = name;
@@ -6,7 +6,7 @@ const maskEmail = (email = '') => {
     return maskedName + '@' + domain;
 };
 
-const maskEmail2 = (email = '') =>{
+const maskEmail2 = (email) =>{
     const name = email.substring(0, email.lastIndexOf("@"));
     const domain = email.substring(email.lastIndexOf("@"));
     const { length: len } = name;
